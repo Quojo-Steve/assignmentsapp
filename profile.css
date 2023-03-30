@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+body{
+    overflow-y: hidden;
+}
+nav{
+    background: rgb(14, 7, 49);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+nav h1{
+    font-weight: normal;
+}
+nav a{
+    color: rgb(221, 215, 215);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+section{
+    background: rgb(180, 180, 180);
+    padding: 0px 40px;
+    min-height: 100vh;
+    max-width: 100vw;
+    display: grid;
+    grid-template-rows: 5% 75% 15%;
+}
+section .home{
+    color: gray;
+    font-size: 15px;
+}
+section .home a{
+    color: gray;
+    font-size: 15px;
+    text-decoration: none;
+}
+section .home a:nth-child(2){
+    color: rgb(45, 30, 255);
+    font-weight: bold;
+}
+section .main{
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-y: auto;
+    /* margin-bottom: 10px; */
+}
+section .main h4{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+section .main .one{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+section .main .one label{
+    font-size: 10px;
+}
+section .main .one img{
+    width: 120px;
+    height: 120px;
+}
+section .main .one input{
+    width: 90%;
+    margin-bottom: 10px;
+    outline: none;
+    padding: 0px 10px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+section .main .one:nth-child(6) input{
+    border-bottom: none;
+}
+section .main form .error{
+    background: rgb(100, 71, 27);
+    color: red;
+    text-align: center;
+    width: 90%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+section footer{
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(73, 71, 71);
+}
+.sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subb{
+    display: none;
+}
+.subb.sad{
+    background: dodgerblue;
+    border: none;
+    outline: none;
+    padding: 11px 25px;
+    width: 100px;
+    color: white;
+    /* margin-top: 10px; */
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+}
+.subb:active{
+    opacity: 0.8;
+}
+
+@media screen and (max-width:500px) {
+    nav h1{
+        font-size: 20px;
+    }
+    section{
+        padding: 0px 10px;
+    }
+    section .main .one img{
+        width: 100px;
+        height: 100px;
+    }
+    .subb{
+        margin-top: 40px;
+    }
+}
